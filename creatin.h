@@ -17,7 +17,7 @@ void creatinput() {
 
 
     ifstream in("stdin_format.txt");
-    ofstream out("input.txt",ios::app);
+    ofstream out("input.txt",ios::trunc);
     string temp = "";
     if (!in.is_open()) {
         cout << "open false!";
